@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.main-menu {
+    display: flex;
+    list-style-type: none;
+    background: transparent;
+    text-align: center;
+    min-height: 7vh;
+    justify-content: space-between;
+    padding-right: 20%;
+    padding-left: 20%;
+    text-decoration: none;
+    overflow: hidden;
+}
+.form-components {
+    margin: 10%;
+    justify-content: center;
+}
+
+button.button-form {
+    background: rgb(63, 63, 213);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: DefaultFont;
+    letter-spacing: 2px;
+}
+
+.form-input,
+.form-input:active,
+.form-input:focus {
+    width: 100%;
+    min-height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+label {
+    font: normal 18px DefaultFont;
+    letter-spacing: 1px;
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    min-height: 20vw;
+    min-width: 200px;
+    max-width: 400px;
+    inset: 0;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.main-menu-inner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font: bold 17px DefaultFont;
+    justify-content: center;
+    padding-top: 2vh;
+    text-decoration: none;
+}
+
+a {
+    letter-spacing: 2px;
+}
+
+.main-menu-item {
+    color: rgb(15, 220, 15);
+    background-size: cover;
+    width: 15vw;
+    min-height: 1rem;
+    border-bottom: 1.5px solid rgb(255, 255, 255, 0.5);
+
+}
+
+.active {
+    font: bold 3vh DefaultFont;
+    color: rgb(236, 221, 10);
+    border-bottom: 3px solid rgb(255, 255, 255, 1);
+}
+
+.main-menu-item:hover {
+    font: bold 3vh DefaultFont;
+    color: rgb(236, 221, 10);
+    border-bottom: 3px solid rgb(255, 255, 255, 1);
+}
+
+h1 {
+    font: normal 3rem TitleFont;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10vh;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    letter-spacing: 10px;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bigstock-Beef-steaks-sizzling-on-the-gr-294363871-1024x684.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 55vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.link {
+    font: normal 2.5vh DefaultFont;
+    font: normal 15px DefaultFont;
+    color: rgb(3, 171, 3);
+    border: none;
+}
+
+.link:hover {
+    font: normal 15px DefaultFont;
+    color: rgb(166, 190, 5);
+    border: none;
+}
+
+.text-paragraph {
+    padding-top: 2rem;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 3rem;
+    font: normal 15px DefaultFont;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: DefaultFont;
+    padding-top: 2rem;
+    text-align: left;
+    padding-left: 10%;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+}
+
+.container-wrap {
+    position: relative;
+    display: flex;
+    top: -100px;
+    min-height: 2rem;
+}
+
+.home-container {
+    background: rgb(224, 211, 255);
+    width: 80%;
+    min-height: 350px;
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, -35%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.list-of-info-item1 {
+    background-image: url('../images/Comparing-Catering-Companies-Toronto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 10rem;
+    width: 100%;
+}
+
+.list-of-info-item2 {
+    background-image: url('../images/2021711-sault-ste-marie-ontario.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 10rem;
+    width: 100%;
+}
+
+.list-of-info-item3 {
+    background-image: url('../images/feijoada-para-80-pessoas.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 10rem;
+    width: 100%;
+}
+
+.divider {
+    margin: 15px;
+    border-top: 1px solid gray;
+}
+
+.list-of-info-list1 {
+    border-right: 1px solid gray;
+    grid-area: "column1";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.list-of-info-list2 {
+    grid-area: "column2";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+
+.list-of-info-list3 {
+    border-left: 1px solid gray;
+    grid-area: "column3";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+
+.list-of-info {
+    display: grid;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "column1 column2 column3";
+    border: 1px solid grey;
+    border-radius: 15px;
+    overflow: auto;
+    min-width: 20rem;
+    right: -1%;
+    top: 20%;
+    min-height: 600px;
+}
+
+.text-item {
+    margin: 0px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.contact {
+    margin-bottom: 10px;
+}
+
+.spacer {
+    height: 3vh;
+}
+
+.button {
+    font: normal 2vh DefaultFont;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    align-items: center;
+    min-width: 125px;
+    height: 8%;
+    background-color: green;
+    transition: .5s;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.button:hover {
+    color: black;
+    background-color: yellow;;
+}
+
+.text-item {
+    font-family: DefaultFont;
+    padding: 4vw;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: larger;
+    margin-bottom: 4vh;
+    font-family: DefaultFont;
+    letter-spacing: 1px;
+}
+
+footer {
+    background: green;
+    min-height: 300px;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 10%;
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "footer-left footer-middle footer-right";
+}
+
+.footer-left {
+    grid-area: "footer-left";
+    color: white;
+    padding-top: 15px;
+    font-family: DefaultFont;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.footer-menu-inner {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-middle {
+    color: white;
+    grid-area: "footer-middle";
+}
+
+.footer-right {
+    grid-area: "footer-right";
+    color: white;
+    font-family: DefaultFont;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-left: 5%;
+    word-wrap: break-word;
+}
+
+.footer-right-item {
+    padding-top: 5;
+    padding-bottom: 5px;
+}
+
+.email {
+    color: yellow;    
+}
+
+.email:hover {
+    color: rgb(9, 9, 110);    
+}
+
+@font-face {
+    font-family: TitleFont;
+    src: url(Amperzand.ttf);
+}
+
+@font-face {
+    font-family: DefaultFont;
+    src: url(KasseFLF.ttf);
+}
+
+::-webkit-scrollbar {
+width: 5px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: insets 0px 0px 10px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(0, 68, 255); 
+box-shadow: insets 0px 0px 10px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: rgb(4, 42, 147); 
+box-shadow: insets 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-background{
+background: rgb(191, 232, 169);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+min-width: 10vw;
+padding-left: 5%;
+padding-bottom: 5vw;
+}
+
+.container-menu {
+display: grid;
+grid-template-columns: .5fr 3fr;
+grid-template-rows: 1fr;
+grid-template-areas:
+"menunavbar menuitems"
+}
+
+.menu-navbar {
+grid-area: "menunavbar";
+}
+
+.menu-items {
+grid-area: "menuitems";
+padding: 2vw;
+}
+
+.menu-title {
+padding-left: 0vw;
+padding-bottom: 1vw;
+}
+
+.navbar-item {
+color: black;
+font-family: DefaultFont;
+}
+
+.navbar-item-last {
+color: black;
+}
+
+.navbar-item-list {
+padding-bottom: 20px;
+}
+
+.navbar-item-list {
+padding-bottom: 40px;
+}
+
+.menu-container {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-family: DefaultFont;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item {
+    margin: 5vh;
+}
+
+.menu-divider {
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+.about-us {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.about-us-titles {
+    font: bold 20px DefaultFont;
+    letter-spacing: 2px;
+    margin-bottom: 1.5vw;
+    margin-top: 1.5vw;
+}
+
+.about-us-titles-first {
+    font: bold 20px DefaultFont;
+    letter-spacing: 2px;
+    margin-bottom: 1.5vw;
+}
+
+.about-us-paragraph {
+    font: normal 16px DefaultFont;
+    letter-spacing: 2px;
+}
+
+.staff-login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh;
+}
+
+.job-postings-container {
+    display: flex;
+    align-items: center;
+    margin: 2% 10%;
+}
+
+.job-postings-container {
+    display: block;
+    align-items: center;
+    margin: 2% 10%;
+}
+
+.accordion {
+    position: relative;
+    margin: 60px auto;
+    color: black;
+    width: 80%;
+  }
+  
+  [id*="open-accordion"], [id*="close-accordion"] {
+    color: black;
+    background: yellow;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 99%;
+  }
+  
+  [id*="close-accordion"] {
+    display: none;
+    color: black;
+  }
+  
+  .accordion a {
+    color: green;
+    font-family: DefaultFont;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-left: 2%;
+    text-decoration: none;
+    text-shadow: none;
+  }
+  
+  [id*="open-accordion"]:after, [id*="close-accordion"]:after {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid green;
+    color: black;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    z-index: 999;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+  
+  .target-fix {
+    color: black;
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  
+  .accordion-content {
+    letter-spacing: 2px;
+    background: rgb(28, 1, 123);
+    box-shadow: 0px 0px 17px rgba(28, 1, 123);
+    border: rgb(28, 1, 123);
+    height: 0;
+    color: #fff;
+    font-family: DefaultFont;
+    margin: -1px auto 0;
+    padding: 0 2.5%;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    z-index: -1;
+  }
+  
+  .accordion span:target ~ .accordion-content {
+    display: block;
+    height: auto;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+  
+  .accordion span:target ~ [id*="close-accordion"] {
+    display: block;
+  }
+  
+  .accordion span:target ~ [id*="open-accordion"] {
+    display: none;
+  }
+  
+  .accordion span:target ~ [id*="close-accordion"]:after {
+    border-top: 10px solid green;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  .careers-text {
+    font-family: DefaultFont;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .footer-item {
+    color: white;
+  }
+
+  .dahsboard-menu {
+    margin: 2% 5%;
+  }
