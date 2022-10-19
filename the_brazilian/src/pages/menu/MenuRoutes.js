@@ -22,7 +22,7 @@ export default function MenuRoutes() {
               <Route className='menu-item' path='entree' element={<Entree />} />
               <Route className='menu-item' path='main' element={<Main />} />
               <Route className='menu-item' path='soups' element={<Soups />} />
-              <Route className='menu-item'path='sides' element={<Sides />} />
+              <Route className='menu-item' path='sides' element={<Sides />} />
               <Route className='menu-item' path='deserts' element={<Deserts />} />
               <Route className='menu-item' path='*' element={<NotFound />} />
           </Routes>

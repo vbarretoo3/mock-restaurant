@@ -9,9 +9,10 @@ import About from './pages/about/About';
 import Careers from './pages/careers/Careers';
 import NotFound from './pages/not_found/NotFound';
 import Staff from './pages/staff/Staff';
-import Dashboard from './pages/staff/Dashboard';
+import DashboardRoutes from './pages/staff/DashboardRoutes';
 import ForgotPassword from './pages/staff/ForgotPassword';
 import './style/index.css';
+import PrivateRoute from './pages/staff/PrivateRoute';
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/careers' element={<Careers />} />
             <Route path='/staff' element={<Staff />} />
-            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/dashboard/*' element={<PrivateRoute><DashboardRoutes /></PrivateRoute>}/>
             <Route path='/forgot-password' element={<ForgotPassword />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
