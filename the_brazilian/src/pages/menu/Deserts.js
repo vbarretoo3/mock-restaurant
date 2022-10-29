@@ -3,7 +3,7 @@ import FirebaseFunctions from './FirebaseFunctions';
 
 
 export default function Deserts() {
-  const items = FirebaseFunctions('Deserts')
+  const items = FirebaseFunctions('desert')
 
   return (
     <>

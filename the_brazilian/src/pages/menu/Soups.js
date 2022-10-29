@@ -3,7 +3,7 @@ import FirebaseFunctions from './FirebaseFunctions';
 
 
 export default function Soups() {
-  const items = FirebaseFunctions('Soups')
+  const items = FirebaseFunctions('soup')
 
   return (
     <>

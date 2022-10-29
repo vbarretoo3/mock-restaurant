@@ -3,7 +3,7 @@ import FirebaseFunctions from './FirebaseFunctions';
 
 
 export default function Main() {
-  const items = FirebaseFunctions('Main')
+  const items = FirebaseFunctions('main')
 
   return (
     <>

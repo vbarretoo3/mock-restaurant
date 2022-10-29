@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 export default function Dashboard() {
-  const items1 = FirebaseFunctions('Entree')
-  const items2 = FirebaseFunctions('Main')
-  const items3 = FirebaseFunctions('Soups')
-  const items4 = FirebaseFunctions('Sides')
-  const items5 = FirebaseFunctions('Deserts')
+  const items1 = FirebaseFunctions('entree')
+  const items2 = FirebaseFunctions('main')
+  const items3 = FirebaseFunctions('soup')
+  const items4 = FirebaseFunctions('side')
+  const items5 = FirebaseFunctions('desert')
   const {logout} = useAuth()
   const history = useNavigate()
 

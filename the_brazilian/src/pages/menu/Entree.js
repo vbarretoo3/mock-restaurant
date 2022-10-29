@@ -3,7 +3,7 @@ import FirebaseFunctions from './FirebaseFunctions';
 
 
 export default function Entree() {
-  const items = FirebaseFunctions('Entree')
+  const items = FirebaseFunctions('entree')
 
   return (
     <>

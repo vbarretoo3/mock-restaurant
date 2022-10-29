@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import { db } from './Firebase';
-import { collection, query, onSnapshot } from "firebase/firestore";
+import { collection, query, onSnapshot, where } from "firebase/firestore";
 
 
 export default function FirebaseFunctions(parm) {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    const q = query(collection(db, parm))
+    const q = query(collection(db, 'menu'), where("type", "==", parm))
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       let itemsArr = []
       querySnapshot.forEach((doc) => {

@@ -3,7 +3,7 @@ import FirebaseFunctions from './FirebaseFunctions';
 
 
 export default function Sides() {
-  const items = FirebaseFunctions('Sides')
+  const items = FirebaseFunctions('side')
 
   return (
     <>
