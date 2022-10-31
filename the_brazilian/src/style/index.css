@@ -503,9 +503,9 @@ padding-bottom: 40px;
     margin: 60px auto;
     color: black;
     width: 80%;
-  }
-  
-  [id*="open-accordion"], [id*="close-accordion"] {
+}
+
+[id*="open-accordion"], [id*="close-accordion"] {
     color: black;
     background: yellow;
     line-height: 40px;
@@ -514,14 +514,14 @@ padding-bottom: 40px;
     margin: 0 auto;
     position: relative;
     width: 99%;
-  }
-  
-  [id*="close-accordion"] {
+}
+
+[id*="close-accordion"] {
     display: none;
     color: black;
-  }
-  
-  .accordion a {
+}
+
+.accordion a {
     color: green;
     font-family: DefaultFont;
     font-size: 1.25em;
@@ -529,9 +529,9 @@ padding-bottom: 40px;
     padding-left: 2%;
     text-decoration: none;
     text-shadow: none;
-  }
-  
-  [id*="open-accordion"]:after, [id*="close-accordion"]:after {
+}
+
+[id*="open-accordion"]:after, [id*="close-accordion"]:after {
     content: "";
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -543,17 +543,17 @@ padding-bottom: 40px;
     z-index: 999;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
-  }
-  
-  .target-fix {
+}
+
+.target-fix {
     color: black;
     display: block;
     top: 0;
     left: 0;
     position: fixed;
-  }
-  
-  .accordion-content {
+}
+
+.accordion-content {
     letter-spacing: 2px;
     background: rgb(28, 1, 123);
     box-shadow: 0px 0px 17px rgba(28, 1, 123);
@@ -570,40 +570,80 @@ padding-bottom: 40px;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
     z-index: -1;
-  }
-  
-  .accordion span:target ~ .accordion-content {
+}
+
+.accordion span:target ~ .accordion-content {
     display: block;
     height: auto;
     padding-bottom: 25px;
     padding-top: 10px;
-  }
-  
-  .accordion span:target ~ [id*="close-accordion"] {
+}
+
+.accordion span:target ~ [id*="close-accordion"] {
     display: block;
-  }
-  
-  .accordion span:target ~ [id*="open-accordion"] {
+}
+
+.accordion span:target ~ [id*="open-accordion"] {
     display: none;
-  }
-  
-  .accordion span:target ~ [id*="close-accordion"]:after {
+}
+
+.accordion span:target ~ [id*="close-accordion"]:after {
     border-top: 10px solid green;
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
-  }
+}
 
-  .careers-text {
+.careers-text {
     font-family: DefaultFont;
     font-size: 1em;
     letter-spacing: 1px;
     font-weight: 500;
-  }
+}
 
-  .footer-item {
+.footer-item {
     color: white;
-  }
+}
 
-  .dahsboard-menu {
+.dahsboard-menu {
     margin: 2% 5%;
-  }
+}
+
+.edit-menu-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-menu-form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 3%;
+    min-width: 350px;
+    min-height: 250px;
+    font-family: DefaultFont;
+    margin: 4%;
+    gap: 2vh;
+}
+
+.edit-menu-button {
+    height: 5vh;
+}
+
+.edit-menu-input {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    width: 98%;
+    height: 4vh;
+    font-family: DefaultFont;
+    font-size: large;
+    letter-spacing: 2px;
+    padding-left: 2%;
+}
+
+.description {
+    height: 25vw;
+    word-wrap: break-word;
+}
